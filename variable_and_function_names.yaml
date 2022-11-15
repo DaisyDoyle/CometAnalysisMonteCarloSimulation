@@ -1,0 +1,28 @@
+Variables: |
+
+    no_single_strands: Number of single DNA strands
+    
+    length_strand: Length of DNA strand, this is a measurement of base pairs.
+    
+    mean_breaks: Average number of breaks per strand.
+    
+    no_breaks: number of breaks
+    
+    no_segments: Number of segments generated after proton therapy has been applied and strands have been broken.
+    
+    length_segment: Length of segments
+    
+    k: Number of occurrances for poisson function
+    
+    lam: Poisson function lambda
+
+
+Functions: |
+
+    date_time(): Returns date and time programme is run at
+    
+    poisson_function(k, lam): Determines a poisson distribution from k number of occurrances and lam lambda, this is called in data_visualisation()
+    
+    data_visualisation(mean_breaks, length_strand, length_segment): Data visualisation of number of breaks of dna strands and segment lengths
+    
+    
