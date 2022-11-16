@@ -1,0 +1,34 @@
+Date and user: |
+
+    16th November, week 1 session 2, user DD
+    
+General comments: |
+    
+    I have renamed variables so they read clearly from an outside perspective and to avoid getting confused. I have created a yaml file outlining the new variable names and purposes to reduce the number of comments in file. I have done the same for new functions. I have employed functional programming techniques throughout the code with varying success!
+
+Simulation of strand length: |
+    
+    I have fixed the issue with sci py special.factorial. We need to use 'from scipy.special import factorial'
+    What is importance of date time?
+    Confused when it comes to the third histogram, why does this rely on length_strand instead of length_segment?
+    In main for loop what is num_hist_here, len_hist_here section? What does 'end' mean and do? 
+    Is there a better way we could write n_poiss_plot and k_poiss_plot? I do not understand what these variables mean.
+
+
+DNA Clumping: |
+
+    Attempted to employ functional programming techniques but struggling with passing/returning parameters and the logic. I would like to find a way to keep all info for same graph together for clearer reading.
+    'cols' and 'col' are confusing, would like to suggest writing as 'columns' and 'color'.
+    What is 'use_sphere'? I understanding setting Boolean variables but unsure as to why and how this is used in the code.
+    What does 'sig_radius_cell' mean? Unsure as to meaning of sig specifically.
+    Why are we using a minimum radius of cell/nucleus?
+    
+
+
+Motion of DNA in Agrose: |
+
+    Date and time calculations have been repeated, is there a way we can write a function of date time that can be used across the whole notebook to avoid repeating code? I have tried working on this myself but I am having problems understanding the logic of system so I have moved these variables into a seperate cell and focused on the rest of this section.
+    What is importance of date time in this section?
+    In velocity_in_agarose():, what is kB, kC, kL, alpha?
+    Could velocity field graph and velocity length graph be written in functions to keep the code clear as to which line has which impact?
+    

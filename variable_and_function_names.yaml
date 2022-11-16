@@ -1,28 +1,49 @@
-Variables: |
-
+Simulation of strand length: |
+    
+    
+    VARIABLES
     no_single_strands: Number of single DNA strands
-    
     length_strand: Length of DNA strand, this is a measurement of base pairs.
-    
     mean_breaks: Average number of breaks per strand.
-    
     no_breaks: number of breaks
-    
     no_segments: Number of segments generated after proton therapy has been applied and strands have been broken.
-    
     length_segment: Length of segments
-    
     k: Number of occurrances for poisson function
-    
     lam: Poisson function lambda
-
-
-Functions: |
-
+    
+    FUNCTIONS
     date_time(): Returns date and time programme is run at
-    
     poisson_function(k, lam): Determines a poisson distribution from k number of occurrances and lam lambda, this is called in data_visualisation()
-    
     data_visualisation(mean_breaks, length_strand, length_segment): Data visualisation of number of breaks of dna strands and segment lengths
     
+
+DNA Clumping: |
     
+    
+    VARIABLES
+    use_sphere:
+    radius_nucleus:
+    radius_nucleus_min:
+    sig_radius_nucleus:
+    radius_cell:
+    radius_cell_min:
+    sig_radius_cell:
+    
+    FUNCTIONS
+    defining_parameters():
+    _2Dcell():
+    _3Dcell():
+    _2Dimage():
+    _3Dimage():
+    number_of_cells():
+
+
+Motion of DNA in Agrose: |
+
+
+    VARIABLES
+    velocity: calculated in velocity_in_agarose()
+    
+    FUNCTIONS
+    velocity_in_agarose(): Given length of DNA strand (in kbp) and electric field (in V/cm) returns velocity in agarose (in cm/s * 10^4 or equivalently microns/s).
+    called in two plotting for loops.
